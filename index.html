@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Neki naslov</title>
+    <meta name="title" content="ADIDAS FORUM" />
+    <meta
+      name="description"
+      content="Adidas Originals savršena obuća u svim godišnjim dobima i dijelovima dana i noći"
+    />
+    <link rel="stylesheet" href="css/main.css?v=1" />
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://native.story.hr/preview/adidas/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Adidas Forum" />
+    <meta
+      property="og:description"
+      content="Uz adidas Forum tenisice slavimo dobar stil, optimizam i best friends atmosferu"
+    />
+    <meta
+      property="og:image"
+      content="https://native.story.hr/preview/adidas/share.jpg"
+    />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="fb:app_id" content="684146431996498" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-267402-38"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-267402-38", { anonymize_ip: true });
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- VIDEO BLOCK -->
+      <section>
+        <div class="videoWrapper">
+          <video
+            class="video"
+            autoplay
+            loop
+            muted
+            playsinline
+            width="100%"
+            height="auto"
+            preload="auto"
+          >
+            <source
+              src="./_assets/video/zuti_okvir_video.mp4"
+              type="video/mp4"
+            />
+            Sorry, your browser does not support the video tag.>
+          </video>
+        </div>
+        <div class="header__text">
+          <h1>
+            Nominirajte <br />
+            najbolje za <br />
+            ljepšu <br />budućnost
+          </h1>
+          <p>
+            National Geographic Hrvatska i tvrtka Adria Media Zagreb u sklopu
+            projekta Žuti okvir poziva sve pojedince, tvrtke, ustanove i
+            organizacije da nominiraju projekte, aktivnosti, proizvode, osobe,
+            gospodarstvenike, znanstvenike, studente, amatere i profesionalce
+            koji svojim postignućima najbolje oslikavaju, promoviraju i
+            podržavaju ciljeve održivog razvoja u društvu znanja. Nominacije
+            traju do 14. listopada, kada će stručni žiri odlučiti tko je
+            dobitnik Žutog okvira u navedenim kategorijama za 2022. godinu.
+          </p>
+          <hr class="header__line" />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <form class="form">
+        <div class="form__title">
+          <div>
+            <h2>PRIJAVNICA</h2>
+            <h3>Za natječaj Žuti Okvir 2022.</h3>
+          </div>
+          <img
+            class="zuti-okvir"
+            src="./_assets/images/zuti_okvir@3x.png"
+            alt=""
+          />
+        </div>
+
+        <!-- Naziv tvrtke -->
+        <h4>Naziv tvrtke / udruge / institucije / pojedinca</h4>
+        <p>koji se natječu za nagradu Žuti okvir 2022.</p>
+        <div>
+          <input
+            type="text"
+            id="naziv_tvrtke"
+            name="naziv_tvrtke"
+            class="form__naziv_tvrtke"
+          />
+        </div>
+
+        <!-- Kontakt -->
+        <h4>Kontakt</h4>
+        <p>
+          tvrtke / udruge / institucije / pojedinca koji se natječu za nagradu
+          Žuti okvir 2022.
+        </p>
+
+        <!-- e-mail -->
+
+        <div class="one-line">
+          <p><span>e-mail:</span></p>
+          <input type="email" id="email" name="email" class="form__email" />
+        </div>
+        <p><span>telefon:</span></p>
+        <div>
+          <input
+            type="text"
+            id="telefon"
+            name="telefon"
+            class="form__telefon"
+          />
+        </div>
+
+        <!-- Kontakt- treća strana -->
+        <h4>Kontakt</h4>
+        <p>
+          tvrtke / udruge / institucije / pojedinca koji nominiraju treću
+          stranu*
+        </p>
+
+        <!-- e-mail -->
+        <p><span>e-mail:</span></p>
+        <div>
+          <input
+            type="email"
+            id="email_trecastrana"
+            name="email_trecastrana"
+            class="form__email_trecastrana"
+          />
+        </div>
+        <p><span>telefon:</span></p>
+        <div>
+          <input
+            type="text"
+            id="telefon_trecastrana"
+            name="telefon_trecastrana"
+            class="form__telefon_trecastrana"
+          />
+        </div>
+        <p id="treca_strana">
+          *ukoliko nominirate treću stranu ovo polje je obavezno
+        </p>
+
+        <!-- Naziv projekta -->
+        <h4 class="title__margin">Naziv projekta</h4>
+        <div>
+          <input
+            type="text"
+            id="naziv_projekta"
+            name="naziv_projekta"
+            class="form__naziv_projekta"
+          />
+        </div>
+
+        <!-- Trajanje projekta -->
+        <h4 class="title__margin">Trajanje projekta</h4>
+        <div>
+          <input
+            type="text"
+            id="trajanje_projekta"
+            name="trajanje_projekta"
+            class="form__trajanje_projekta"
+          />
+        </div>
+
+        <!-- Opis projekta -->
+        <h4 class="title__margin">Opis projekta</h4>
+        <div>
+          <textarea
+            name="opis_projekta"
+            id="opis_projekta"
+            rows="20"
+          ></textarea>
+        </div>
+
+        <!-- Cilj projekta -->
+        <h4 class="title__margin">Cilj projekta</h4>
+        <div>
+          <textarea
+            name="cilj_projekta"
+            id="cilj_projekta"
+            rows="20"
+          ></textarea>
+        </div>
+
+        <!-- Link projekta-->
+        <h4 class="title__margin">
+          Link na prezentaciju / fotografije / video projekta
+        </h4>
+        <div>
+          <input
+            type="text"
+            id="link_projekta"
+            name="link_projekta"
+            class="form__link_projekta"
+          />
+        </div>
+
+        <!-- Kategorija projekta -->
+        <h4>Kategorija u kojoj se projekt prijavljuje</h4>
+        <p>Molimo odaberite jednu od kategorija</p>
+
+        <div>
+          <input
+            type="radio"
+            id="siromastvo"
+            name="kategorija"
+            value="siromastvo"
+          />
+          <label class="form__label" for="siromastvo"
+            >Iskorjenjivanje siromaštva</label
+          >
+        </div>
+
+        <div>
+          <input type="radio" id="glad" name="kategorija" value="glad" />
+          <label class="form__label" for="glad">Iskorjenjivanje gladi</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="zdravlje"
+            name="kategorija"
+            value="zdravlje"
+          />
+          <label class="form__label" for="zdravlje">Zdravlje i dobrobit </label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="obrazovanje"
+            name="kategorija"
+            value="obrazovanje"
+          />
+          <label class="form__label" for="obrazovanje"
+            >Kvalitetno obrazovanje
+          </label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="ravnopravnost"
+            name="kategorija"
+            value="ravnopravnost"
+          />
+          <label class="form__label" for="ravnopravnost"
+            >Rodna ravnopravnost
+          </label>
+        </div>
+
+        <div>
+          <input type="radio" id="voda" name="kategorija" value="voda" />
+          <label class="form__label" for="voda"
+            >Čista voda i higijenski uvjet</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="energija"
+            name="kategorija"
+            value="energija"
+          />
+          <label class="form__label" for="energija"
+            >Pristupačna i čista energija
+          </label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="dostojanstvo"
+            name="kategorija"
+            value="dostojanstvo"
+          />
+          <label class="form__label" for="dostojanstvo"
+            >Dostojanstven rad i gospodarski rast
+          </label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="inovacije"
+            name="kategorija"
+            value="inovacije"
+          />
+          <label class="form__label" for="inovacije"
+            >Industrija, inovacije i infrastruktura
+          </label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="nejednakost"
+            name="kategorija"
+            value="nejednakost"
+          />
+          <label class="form__label" for="nejednakost">
+            Smanjenje nejednakosti
+          </label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="odrzivost"
+            name="kategorija"
+            value="odrzivost"
+          />
+          <label class="form__label" for="odrzivost">
+            Održivi gradovi i održive zajednice
+          </label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="potrosnja"
+            name="kategorija"
+            value="potrosnja"
+          />
+          <label class="form__label" for="potrosnja">
+            Odgovorna potrošnja i proizvodnja
+          </label>
+        </div>
+
+        <div>
+          <input type="radio" id="klima" name="kategorija" value="klima" />
+          <label class="form__label" for="klima">
+            Odgovor na klimatske promjene
+          </label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="ispod_vode"
+            name="kategorija"
+            value="ispod_vode"
+          />
+          <label class="form__label" for="ispod_vode"> Život ispod vode</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="na_kopnu"
+            name="kategorija"
+            value="na_kopnu"
+          />
+          <label class="form__label" for="na_kopnu"> Život na kopnu </label>
+        </div>
+
+        <div>
+          <input type="radio" id="mir" name="kategorija" value="mir" />
+          <label class="form__label" for="mir"
+            >Mir i pravda / Snažne institucije</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="partnerstvo"
+            name="kategorija"
+            value="partnerstvo"
+          />
+          <label class="form__label" for="partnerstvo"
+            >Partnerstvo za ciljeve</label
+          >
+        </div>
+
+        <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" />
+        <label class="form__label" for="gdpr">
+          Prihvaćam pravila natječaja i pravila privatnosti AMZ-a</label
+        >
+
+        <div>
+          <input
+            type="submit"
+            id="form__sumbit"
+            class="form__button"
+            value="Pošalji"
+          />
+        </div>
+      </form>
+    </main>
+
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
