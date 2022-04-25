@@ -190,6 +190,12 @@
     height: 50px;
     border: solid 1px $yelloww;
     background-color: $blackinput;
+    font-family: $family-secondary;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    text-align: left;
+    padding: 16px;
 
     @include for-phone {
       margin-bottom: 28px;
@@ -205,6 +211,12 @@
     width: 100%;
     border: solid 1px $yelloww;
     background-color: $blackinput;
+    font-family: $family-secondary;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    text-align: left;
+    padding: 16px;
   }
 
   input[type="checkbox"] {
@@ -215,11 +227,24 @@
   &__label {
     font-family: $family-tertiary;
     color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 48px;
 
     @include for-phone {
-      font-size: 20px;
       line-height: 41px;
     }
+
+    &:hover {
+      border-bottom: 1px solid white;
+      cursor: pointer;
+    }
+  }
+
+  &__gdpr {
+    font-family: $family-tertiary;
+    color: white;
+    font-size: 20px;
   }
 
   #naziv_tvrtke,
@@ -230,12 +255,18 @@
   #opis_projekta,
   #cilj_projekta,
   #link_projekta {
+    margin-bottom: 90px;
     @include for-phone {
       margin-bottom: 70px;
     }
   }
 
+  .kategorija {
+    margin-bottom: 30px;
+  }
+
   .title__margin {
+    margin-bottom: 10px;
     @include for-phone {
       margin-bottom: 14px;
     }
@@ -243,10 +274,52 @@
 
   .one-line {
     display: flex;
+    flex-grow: 1;
+    gap: 60px;
 
     @include for-phone {
       display: block;
     }
+
+    &-with-gap {
+      justify-content: space-between;
+    }
+  }
+
+  #gdpr {
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    @include for-phone {
+      margin-bottom: 0;
+    }
+  }
+
+  input[type="submit"] {
+    width: 175px;
+    color: $yelloww;
+    font-family: $family-tertiary;
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 250px;
+    cursor: pointer;
+    text-align: center;
+
+    @include for-phone {
+      margin-top: 70px;
+      width: 128px;
+    }
+
+    &:hover {
+      background-color: $yelloww;
+      color: black;
+    }
+  }
+
+  a {
+    color: $yelloww;
+    border-bottom: 1px solid $yelloww;
+    text-decoration: none;
   }
 }
 
