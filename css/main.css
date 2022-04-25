@@ -11541,6 +11541,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   max-width: 900px;
   display: block;
   margin: 0 auto;
+  /* The container */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
 }
 @media (max-width: 767px) {
   .form {
@@ -11695,7 +11710,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .form__label {
   font-family: verlagLight, cursive;
   color: white;
-  margin-bottom: 10px;
   font-size: 20px;
   line-height: 48px;
 }
@@ -11798,6 +11812,127 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #fcdb0e;
   border-bottom: 1px solid #fcdb0e;
   text-decoration: none;
+  font-family: verlagLight, cursive;
+}
+.form .containerr {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 90px;
+  margin-top: 90px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media (max-width: 767px) {
+  .form .containerr {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+.form .containerr input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.form .checkmark {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: solid 1px white;
+  background-color: #222121;
+}
+.form .containerr:hover input ~ .checkmark {
+  background-color: #222121;
+  border: solid #fcdb0e;
+}
+.form .containerr input:checked ~ .checkmark {
+  background-color: #222121;
+}
+.form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form .containerr input:checked ~ .checkmark:after {
+  display: block;
+}
+.form .containerr .checkmark:after {
+  left: 4px;
+  top: 0;
+  width: 5px;
+  height: 10px;
+  border: solid #fcdb0e;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.form .container2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form .container2 input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.form .checkmark-radio {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: #222121;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+@media (max-width: 767px) {
+  .form .checkmark-radio {
+    top: 14px;
+  }
+}
+.form .container2:hover input[type=radio] ~ .checkmark-radio {
+  background-color: #222121;
+  border: 1px solid #fcdb0e;
+}
+.form .container2 input[type=radio]:checked ~ .checkmark-radio {
+  background-color: #fcdb0e;
+}
+.form .checkmark-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form .container2 input[type=radio]:checked ~ .checkmark-radio:after {
+  display: block;
+}
+.form .container2 .checkmark-radio:after {
+  top: 0px;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fcdb0e;
+  border: 1px solid #fcdb0e;
+}
+.form #error-msg {
+  font-family: verlagLight, cursive;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ff0000;
 }
 
 .header__pravila {
@@ -11817,6 +11952,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #fcdb0e;
   border-bottom: 1px solid #fcdb0e;
   text-decoration: none;
+  font-family: verlagLight, cursive;
 }
 
 .main__text {

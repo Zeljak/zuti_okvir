@@ -12,6 +12,14 @@
     />
     <link rel="stylesheet" href="css/main.css?v=1" />
 
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./_assets/images/favicon-32x32.png"
+      sizes="32x32"
+    />
+
     <!-- Facebook -->
     <meta
       property="og:url"
@@ -124,12 +132,12 @@
         </p>
 
         <!-- e-mail -->
-        <div class="one-line">
+        <div>
           <p><span>e-mail:</span></p>
           <input type="email" id="email" name="email" class="form__email" />
         </div>
         <!-- telefon -->
-        <div class="one-line">
+        <div>
           <p><span>telefon:</span></p>
           <input
             type="text"
@@ -233,221 +241,231 @@
           <div>
             <!-- siromaštvo -->
             <div>
-              <input
-                type="radio"
-                id="siromastvo"
-                name="kategorija"
-                value="siromastvo"
-              />
-              <label class="form__label" for="siromastvo"
-                >&nbsp;&nbsp;Iskorjenjivanje siromaštva</label
-              >
+              <label class="form__label container2" for="siromastvo"
+                >Iskorjenjivanje siromaštva
+                <input
+                  type="radio"
+                  id="siromastvo"
+                  name="kategorija"
+                  value="siromastvo" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- glad -->
             <div>
-              <input type="radio" id="glad" name="kategorija" value="glad" />
-              <label class="form__label" for="glad"
-                >&nbsp;&nbsp;Iskorjenjivanje gladi</label
-              >
+              <label class="form__label container2" for="glad"
+                >Iskorjenjivanje gladi
+                <input type="radio" id="glad" name="kategorija" value="glad" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- zdravlje -->
             <div>
-              <input
-                type="radio"
-                id="zdravlje"
-                name="kategorija"
-                value="zdravlje"
-              />
-              <label class="form__label" for="zdravlje"
-                >&nbsp;&nbsp;Zdravlje i dobrobit
-              </label>
+              <label class="form__label container2" for="zdravlje"
+                >Zdravlje i dobrobit
+                <input
+                  type="radio"
+                  id="zdravlje"
+                  name="kategorija"
+                  value="zdravlje" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- obrazovanje -->
             <div>
-              <input
-                type="radio"
-                id="obrazovanje"
-                name="kategorija"
-                value="obrazovanje"
-              />
-              <label class="form__label" for="obrazovanje"
-                >&nbsp;&nbsp;Kvalitetno obrazovanje
-              </label>
+              <label class="form__label container2" for="obrazovanje"
+                >Kvalitetno obrazovanje
+                <input
+                  type="radio"
+                  id="obrazovanje"
+                  name="kategorija"
+                  value="obrazovanje" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- ravnopravnost -->
             <div>
-              <input
-                type="radio"
-                id="ravnopravnost"
-                name="kategorija"
-                value="ravnopravnost"
-              />
-              <label class="form__label" for="ravnopravnost"
-                >&nbsp;&nbsp;Rodna ravnopravnost
-              </label>
+              <label class="form__label container2" for="ravnopravnost"
+                >Rodna ravnopravnost
+                <input
+                  type="radio"
+                  id="ravnopravnost"
+                  name="kategorija"
+                  value="ravnopravnost" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- voda -->
             <div>
-              <input type="radio" id="voda" name="kategorija" value="voda" />
-              <label class="form__label" for="voda"
-                >&nbsp;&nbsp;Čista voda i higijenski uvjet</label
-              >
+              <label class="form__label container2" for="voda"
+                >Čista voda i higijenski uvjet
+                <input type="radio" id="voda" name="kategorija" value="voda" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- energija -->
             <div>
-              <input
-                type="radio"
-                id="energija"
-                name="kategorija"
-                value="energija"
-              />
-              <label class="form__label" for="energija"
-                >&nbsp;&nbsp;Pristupačna i čista energija
-              </label>
+              <label class="form__label container2" for="energija"
+                >Pristupačna i čista energija
+                <input
+                  type="radio"
+                  id="energija"
+                  name="kategorija"
+                  value="energija" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- dostojanstvo -->
             <div>
-              <input
-                type="radio"
-                id="dostojanstvo"
-                name="kategorija"
-                value="dostojanstvo"
-              />
-              <label class="form__label" for="dostojanstvo"
-                >&nbsp;&nbsp;Dostojanstven rad i gospodarski rast
-              </label>
+              <label class="form__label container2" for="dostojanstvo"
+                >Dostojanstven rad i gospodarski rast
+                <input
+                  type="radio"
+                  id="dostojanstvo"
+                  name="kategorija"
+                  value="dostojanstvo" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- inovacije -->
             <div>
-              <input
-                type="radio"
-                id="inovacije"
-                name="kategorija"
-                value="inovacije"
-              />
-              <label class="form__label" for="inovacije"
-                >&nbsp;&nbsp;Industrija, inovacije i infrastruktura
-              </label>
+              <label class="form__label container2" for="inovacije"
+                >Industrija, inovacije i infrastruktura
+                <input
+                  type="radio"
+                  id="inovacije"
+                  name="kategorija"
+                  value="inovacije" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
           </div>
-
           <!-- DRUGI DIO KATEGORIJA -->
           <div>
             <!-- nejednakost -->
             <div>
-              <input
-                type="radio"
-                id="nejednakost"
-                name="kategorija"
-                value="nejednakost"
-              />
-              <label class="form__label" for="nejednakost">
-                &nbsp;&nbsp;Smanjenje nejednakosti
-              </label>
+              <label class="form__label container2" for="nejednakost"
+                >Smanjenje nejednakosti
+                <input
+                  type="radio"
+                  id="nejednakost"
+                  name="kategorija"
+                  value="nejednakost" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- odrzivost -->
             <div>
-              <input
-                type="radio"
-                id="odrzivost"
-                name="kategorija"
-                value="odrzivost"
-              />
-              <label class="form__label" for="odrzivost">
-                &nbsp;&nbsp;Održivi gradovi i održive zajednice
-              </label>
+              <label class="form__label container2" for="odrzivost"
+                >Održivi gradovi i održive zajednice
+                <input
+                  type="radio"
+                  id="odrzivost"
+                  name="kategorija"
+                  value="odrzivost" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- potrosnja -->
             <div>
-              <input
-                type="radio"
-                id="potrosnja"
-                name="kategorija"
-                value="potrosnja"
-              />
-              <label class="form__label" for="potrosnja">
-                &nbsp;&nbsp;Odgovorna potrošnja i proizvodnja
-              </label>
+              <label class="form__label container2" for="potrosnja"
+                >Odgovorna potrošnja i proizvodnja
+                <input
+                  type="radio"
+                  id="potrosnja"
+                  name="kategorija"
+                  value="potrosnja" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- klima -->
             <div>
-              <input type="radio" id="klima" name="kategorija" value="klima" />
-              <label class="form__label" for="klima">
-                &nbsp;&nbsp;Odgovor na klimatske promjene
-              </label>
+              <label class="form__label container2" for="klima"
+                >Odgovor na klimatske promjene
+                <input
+                  type="radio"
+                  id="klima"
+                  name="kategorija"
+                  value="klima" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- ispod vode -->
             <div>
-              <input
-                type="radio"
-                id="ispod_vode"
-                name="kategorija"
-                value="ispod_vode"
-              />
-              <label class="form__label" for="ispod_vode">
-                &nbsp;&nbsp;Život ispod vode</label
-              >
+              <label class="form__label container2" for="ispod_vode"
+                >Život ispod vode
+                <input
+                  type="radio"
+                  id="ispod_vode"
+                  name="kategorija"
+                  value="ispod_vode" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- na kopnu -->
             <div>
-              <input
-                type="radio"
-                id="na_kopnu"
-                name="kategorija"
-                value="na_kopnu"
-              />
-              <label class="form__label" for="na_kopnu">
-                &nbsp;&nbsp; Život na kopnu
-              </label>
+              <label class="form__label container2" for="na_kopnu"
+                >Život na kopnu
+                <input
+                  type="radio"
+                  id="na_kopnu"
+                  name="kategorija"
+                  value="na_kopnu" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- mir -->
             <div>
-              <input type="radio" id="mir" name="kategorija" value="mir" />
-              <label class="form__label" for="mir">
-                &nbsp;&nbsp;Mir i pravda / Snažne institucije</label
-              >
+              <label class="form__label container2" for="mir"
+                >Mir i pravda / Snažne institucije
+                <input type="radio" id="mir" name="kategorija" value="mir" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
 
             <!-- partnerstvo -->
             <div>
-              <input
-                type="radio"
-                id="partnerstvo"
-                name="kategorija"
-                value="partnerstvo"
-              />
-              <label class="form__label" for="partnerstvo">
-                &nbsp;&nbsp;Partnerstvo za ciljeve</label
-              >
+              <label class="form__label container2" for="partnerstvo"
+                >Partnerstvo za ciljeve
+                <input
+                  type="radio"
+                  id="partnerstvo"
+                  name="kategorija"
+                  value="partnerstvo" />
+                <span class="checkmark-radio"></span
+              ></label>
             </div>
           </div>
         </div>
 
         <!-- GDPR checkbox -->
-        <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" />
-        <label class="form__gdpr" for="gdpr">
-          &nbsp;&nbsp;Prihvaćam <a href=""> pravila natječaja</a> i
+
+        <label class="form__gdpr containerr" for="gdpr">
+          &nbsp;&nbsp;Prihvaćam
+          <a href="pravilaprijave.html" target="_blank"> pravila natječaja</a> i
           <a
             href="http://www.adriamedia.hr/politika-privatnosti/"
             target="_blank"
           >
             pravila privatnosti AMZ-a</a
-          ></label
-        >
+          >
+          <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" />
+          <span class="checkmark"></span>
+        </label>
 
         <!-- submit button -->
         <div>
@@ -458,6 +476,22 @@
             value="Pošalji"
           />
         </div>
+
+        <!-- Messages and loading -->
+        <div class="is-flex is-justify-content-center">
+          <div id="loading-indicator" class="is-hidden lds-ripple">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <h6 class="is-hidden has-text-centered" id="error-msg" class="">
+          Morate prihvatiti pravila privatnosti i kreativnog natječaja!
+        </h6>
+        <h6 class="is-hidden has-text-centered" id="response-msg" class="">
+          Vaša prijava je spremljena. Hvala na sudjelovanju!
+        </h6>
       </form>
     </main>
 

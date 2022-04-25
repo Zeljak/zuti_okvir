@@ -227,7 +227,6 @@
   &__label {
     font-family: $family-tertiary;
     color: white;
-    margin-bottom: 10px;
     font-size: 20px;
     line-height: 48px;
 
@@ -320,11 +319,163 @@
     color: $yelloww;
     border-bottom: 1px solid $yelloww;
     text-decoration: none;
+    font-family: $family-tertiary;
+  }
+
+  /* The container */
+  .containerr {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 90px;
+    margin-top: 90px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @include for-phone {
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+  }
+
+  /* Hide the browser's default checkbox */
+  .containerr input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: solid 1px white;
+    background-color: $blackinput;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .containerr:hover input ~ .checkmark {
+    background-color: $blackinput;
+    border: solid $yelloww;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .containerr input:checked ~ .checkmark {
+    background-color: $blackinput;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .containerr input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .containerr .checkmark:after {
+    left: 4px;
+    top: 0;
+    width: 5px;
+    height: 10px;
+    border: solid $yelloww;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  // CUSTOM RADIO BUTTON
+  .container2 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .container2 input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkmark-radio {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: $blackinput;
+    border-radius: 50%;
+    border: 1px solid white;
+
+    @include for-phone {
+      top: 14px;
+    }
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container2:hover input[type="radio"] ~ .checkmark-radio {
+    background-color: $blackinput;
+    border: 1px solid $yelloww;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .container2 input[type="radio"]:checked ~ .checkmark-radio {
+    background-color: $yelloww;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .container2 input[type="radio"]:checked ~ .checkmark-radio:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .container2 .checkmark-radio:after {
+    top: 0px;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $yelloww;
+    border: 1px solid $yelloww;
+  }
+
+  #error-msg {
+    font-family: $family-tertiary;
+    font-size: 20px;
+    line-height: 25px;
+    color: $errorred;
   }
 }
 
 // STRANICA S PRAVILIMA PRIJAVE
-
 .header__pravila {
   max-width: 1200px;
   width: 90%;
@@ -343,6 +494,7 @@
     color: $yelloww;
     border-bottom: 1px solid $yelloww;
     text-decoration: none;
+    font-family: $family-tertiary;
   }
 }
 
