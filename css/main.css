@@ -11800,6 +11800,58 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   text-decoration: none;
 }
 
+.header__pravila {
+  max-width: 1200px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.header__pravila h1 {
+  font-family: verlagBlack, cursive;
+  font-size: 30px;
+  line-height: 91px;
+  color: #fcdb0e;
+}
+.header__pravila a {
+  color: #fcdb0e;
+  border-bottom: 1px solid #fcdb0e;
+  text-decoration: none;
+}
+
+.main__text {
+  max-width: 1200px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 61px;
+  margin-bottom: 200px;
+}
+.main__text h3 {
+  font-size: 16px;
+  line-height: 25px;
+  color: white;
+  margin-top: 20px;
+}
+.main__text p {
+  font-family: verlagBook, cursive;
+  font-size: 16px;
+  line-height: 25px;
+  color: white;
+}
+.main__text .p_with_margin {
+  margin-top: 20px;
+}
+.main__text .p_with_extramargin {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.main__text a {
+  color: #fcdb0e;
+  border-bottom: 1px solid #fcdb0e;
+  text-decoration: none;
+}
+
 footer {
   background-color: black;
 }

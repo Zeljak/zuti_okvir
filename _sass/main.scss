@@ -323,6 +323,66 @@
   }
 }
 
+// STRANICA S PRAVILIMA PRIJAVE
+
+.header__pravila {
+  max-width: 1200px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  h1 {
+    font-family: $family-primary;
+    font-size: 30px;
+    line-height: 91px;
+    color: $yelloww;
+  }
+
+  a {
+    color: $yelloww;
+    border-bottom: 1px solid $yelloww;
+    text-decoration: none;
+  }
+}
+
+.main__text {
+  max-width: 1200px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 61px;
+  margin-bottom: 200px;
+
+  h3 {
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+    margin-top: 20px;
+  }
+
+  p {
+    font-family: $family-secondary;
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+  }
+
+  .p_with_margin {
+    margin-top: 20px;
+  }
+  .p_with_extramargin {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  a {
+    color: $yelloww;
+    border-bottom: 1px solid $yelloww;
+    text-decoration: none;
+  }
+}
+
 //FOOTER
 footer {
   background-color: black;
