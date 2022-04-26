@@ -14,7 +14,7 @@ document.querySelector('#form__submit').addEventListener('click', function(e){
       document.querySelector('#loading-indicator').classList.remove('is-hidden');
       document.querySelector('.gdpr_checkmark').style.border = '1px solid #fcdb0e';
 
-      console.log($('form#formZutiOkvir').serializeJSON());
+      // console.log($('form#formZutiOkvir').serializeJSON());
 
       fetch(url,{
         method: 'POST',
