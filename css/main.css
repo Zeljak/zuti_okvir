@@ -11949,6 +11949,7 @@ body {
   font-size: 20px;
   line-height: 25px;
   color: #ff0000;
+  margin-top: 10px;
 }
 .form #error-msg-naziv_tvrtke {
   font-family: verlagLight, cursive;
