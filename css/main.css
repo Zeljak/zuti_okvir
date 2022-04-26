@@ -11471,6 +11471,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: black;
 }
 
+body {
+  background-color: black;
+}
+
 .header__text {
   max-width: 900px;
   display: block;
@@ -11794,7 +11798,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: verlagLight, cursive;
   font-size: 20px;
   line-height: 18px;
-  margin-bottom: 250px;
   cursor: pointer;
   text-align: center;
 }
@@ -11933,6 +11936,85 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-size: 20px;
   line-height: 25px;
   color: #ff0000;
+  margin-bottom: 20px;
+  margin-top: -77px;
+}
+@media (max-width: 767px) {
+  .form #error-msg {
+    margin-top: 0;
+  }
+}
+.form #error-msg-kategorije {
+  font-family: verlagLight, cursive;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ff0000;
+}
+.form #error-msg-naziv_tvrtke {
+  font-family: verlagLight, cursive;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ff0000;
+  position: relative;
+  top: -86px;
+}
+@media (max-width: 767px) {
+  .form #error-msg-naziv_tvrtke {
+    top: -62px;
+  }
+}
+.form #error-msg-email {
+  font-family: verlagLight, cursive;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ff0000;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .form #error-msg-email {
+    top: -23px;
+  }
+}
+.form #error-msg-telefon {
+  font-family: verlagLight, cursive;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ff0000;
+  position: relative;
+  top: -86px;
+}
+@media (max-width: 767px) {
+  .form #error-msg-telefon {
+    top: -62px;
+  }
+}
+.form #response-msg {
+  font-family: verlagLight, cursive;
+  font-size: 20px;
+  line-height: 25px;
+  color: #fcdb0e;
+  margin-top: 50px;
+}
+.form #error-msg-naziv_projekta,
+.form #error-msg-trajanje_projekta,
+.form #error-msg-opis_projekta,
+.form #error-msg-cilj_projekta,
+.form #error-msg-link_projekta {
+  font-family: verlagLight, cursive;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ff0000;
+  position: relative;
+  top: -86px;
+}
+@media (max-width: 767px) {
+  .form #error-msg-naziv_projekta,
+.form #error-msg-trajanje_projekta,
+.form #error-msg-opis_projekta,
+.form #error-msg-cilj_projekta,
+.form #error-msg-link_projekta {
+    top: -62px;
+  }
 }
 
 .header__pravila {
@@ -11988,6 +12070,66 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   text-decoration: none;
 }
 
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid white;
+  opacity: 1;
+  border-radius: 50%;
+  -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+          animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+@-webkit-keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
 footer {
+  height: 250px;
   background-color: black;
+}
+@media (max-width: 767px) {
+  footer {
+    height: 100px;
+  }
 }

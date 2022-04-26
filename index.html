@@ -123,6 +123,9 @@
             class="form__naziv_tvrtke"
           />
         </div>
+        <h6 class="is-hidden" id="error-msg-naziv_tvrtke" class="">
+          Ovo polje je obavezno!
+        </h6>
 
         <!-- Kontakt -->
         <h4>Kontakt</h4>
@@ -136,6 +139,9 @@
           <p><span>e-mail:</span></p>
           <input type="email" id="email" name="email" class="form__email" />
         </div>
+        <h6 class="is-hidden" id="error-msg-email" class="">
+          Ovo polje je obavezno!
+        </h6>
         <!-- telefon -->
         <div>
           <p><span>telefon:</span></p>
@@ -146,6 +152,9 @@
             class="form__telefon"
           />
         </div>
+        <h6 class="is-hidden" id="error-msg-telefon" class="">
+          Ovo polje je obavezno!
+        </h6>
 
         <!-- Kontakt- treća strana -->
         <h4>Kontakt</h4>
@@ -188,6 +197,9 @@
             class="form__naziv_projekta"
           />
         </div>
+        <h6 class="is-hidden" id="error-msg-naziv_projekta" class="">
+          Ovo polje je obavezno!
+        </h6>
 
         <!-- Trajanje projekta -->
         <h4 class="title__margin">Trajanje projekta</h4>
@@ -199,6 +211,9 @@
             class="form__trajanje_projekta"
           />
         </div>
+        <h6 class="is-hidden" id="error-msg-trajanje_projekta" class="">
+          Ovo polje je obavezno!
+        </h6>
 
         <!-- Opis projekta -->
         <h4 class="title__margin">Opis projekta</h4>
@@ -209,6 +224,9 @@
             rows="20"
           ></textarea>
         </div>
+        <h6 class="is-hidden" id="error-msg-opis_projekta" class="">
+          Ovo polje je obavezno!
+        </h6>
 
         <!-- Cilj projekta -->
         <h4 class="title__margin">Cilj projekta</h4>
@@ -219,6 +237,9 @@
             rows="20"
           ></textarea>
         </div>
+        <h6 class="is-hidden" id="error-msg-cilj_projekta" class="">
+          Ovo polje je obavezno!
+        </h6>
 
         <!-- Link projekta-->
         <h4 class="title__margin">
@@ -232,6 +253,9 @@
             class="form__link_projekta"
           />
         </div>
+        <h6 class="is-hidden" id="error-msg-link_projekta" class="">
+          Ovo polje je obavezno!
+        </h6>
 
         <!-- Kategorija projekta -->
         <h4>Kategorija u kojoj se projekt prijavljuje</h4>
@@ -452,6 +476,10 @@
           </div>
         </div>
 
+        <h6 class="is-hidden" id="error-msg-kategorije" class="">
+          Ovo polje je obavezno!
+        </h6>
+
         <!-- GDPR checkbox -->
 
         <label class="form__gdpr containerr" for="gdpr">
@@ -467,6 +495,10 @@
           <span class="checkmark"></span>
         </label>
 
+        <h6 class="is-hidden" id="error-msg" class="">
+          Morate prihvatiti pravila privatnosti i pravila natječaja!
+        </h6>
+
         <!-- submit button -->
         <div>
           <input
@@ -477,6 +509,10 @@
           />
         </div>
 
+        <h6 class="is-hidden has-text-centered" id="response-msg" class="">
+          Vaša prijava je spremljena. Hvala na sudjelovanju!
+        </h6>
+
         <!-- Messages and loading -->
         <div class="is-flex is-justify-content-center">
           <div id="loading-indicator" class="is-hidden lds-ripple">
@@ -486,14 +522,10 @@
             <div></div>
           </div>
         </div>
-        <h6 class="is-hidden has-text-centered" id="error-msg" class="">
-          Morate prihvatiti pravila privatnosti i kreativnog natječaja!
-        </h6>
-        <h6 class="is-hidden has-text-centered" id="response-msg" class="">
-          Vaša prijava je spremljena. Hvala na sudjelovanju!
-        </h6>
       </form>
     </main>
+
+    <footer></footer>
 
     <script type="text/javascript" src="lib/main.js"></script>
   </body>
